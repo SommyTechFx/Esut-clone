@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(125, 43, 12, 1) 0%,
+    rgba(91, 39, 19, 1) 100%
+  );
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-size: cover;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav img {
+  width: 4.6rem;
+  height: 4.65rem;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.navbar-drop ul {
+  display: none;
+}
+.nav-bar h3 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 350;
+}
+nav h5 {
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 350;
+}
+.nav-links {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.navbar-drop.open {
+  display: block;
+}
+
+.navbar-drop li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar-drop li:hover {
+  background-color: #f0f0f0;
+}
+@media screen and (max-width: 925px) {
+  nav h5 {
+    display: none;
+  }
+  .navbar-drop ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+  }
+  .menu-icon {
+    cursor: pointer;
+    font-size: 3rem;
+    display: inline-block;
+  }
+  ul {
+    flex-direction: column;
+  }
+  .navbar-drop {
+    display: none;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 5.5rem;
+    background-image: linear-gradient(
+      180deg,
+      rgba(125, 43, 12, 1) 0%,
+      rgba(91, 39, 19, 1) 100%
+    );
+    border: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-drop.open {
+    display: flex;
+  }
+}
